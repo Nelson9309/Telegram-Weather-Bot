@@ -1,8 +1,8 @@
 import pyowm
 import telebot
 
-owm = pyowm.OWM('your-API-key', language='ru') #language if you need
-bot = telebot.TeleBot("TOKEN")
+owm = pyowm.OWM('your-API-key', language='ru') #API-key Open Weather Map; (language if you need).
+bot = telebot.TeleBot("TOKEN") # Get token with BotFather
 
 
 @bot.message_handler(commands=['start'])
